@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="438.0" prefWidth="600.0" style="-fx-background-color: #2fded5;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.IncomeFomController">
+   <children>
+      <ImageView fitHeight="521.0" fitWidth="959.0" layoutX="-208.0" layoutY="-18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/registr.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="109.0" layoutY="20.0" prefHeight="71.0" prefWidth="412.0" text="Отправьте отчетность о доходах">
+         <font>
+            <Font name="Arial Bold" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="firm_name" layoutX="73.0" layoutY="105.0" promptText="Название фирмы" />
+      <TextField fx:id="firm_unp" layoutX="73.0" layoutY="152.0" promptText="УНП Фирмы" />
+      <TextField fx:id="income" layoutX="73.0" layoutY="251.0" promptText="Доход" />
+      <Label layoutX="246.0" layoutY="219.0" prefHeight="37.0" prefWidth="310.0" text="Игорный, Переработка, Логистика, Самозанятый">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="send_income_form" layoutX="73.0" layoutY="355.0" mnemonicParsing="false" onAction="#send_income_Form" prefHeight="25.0" prefWidth="149.0" text="Отправить анкету" />
+      <Label fx:id="info_field" layoutX="257.0" layoutY="82.0" prefHeight="47.0" prefWidth="287.0" textFill="#ffffff">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="back_butt" layoutX="21.0" layoutY="399.0" mnemonicParsing="false" onAction="#back_Buttt" text="Назад" />
+      <TextField fx:id="business_branch" layoutX="73.0" layoutY="200.0" promptText="Отрасль бизнеса" />
+      <Label layoutX="245.0" layoutY="177.0" prefHeight="37.0" prefWidth="310.0" text="Продажи, Фермерство, Арендадательсво">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="sendRecalculate" layoutX="263.0" layoutY="355.0" mnemonicParsing="false" onAction="#sendRecalculate_Butt" prefHeight="25.0" prefWidth="166.0" text="Отправить на переучет" />
+      <Label layoutX="50.0" layoutY="289.0" prefHeight="37.0" prefWidth="531.0" text="Чтобы отправить данные на переучет, введите УНП фирмы и доход за период" textFill="#1e0606">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
